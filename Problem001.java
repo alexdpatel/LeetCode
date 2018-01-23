@@ -1,13 +1,12 @@
 import java.util.HashMap;
 
 public class Problem001 {
-    public static void main(String[] args) {
-        System.out.println(twoSum(new int[] {1, 2, 3, 4, 5, 6}, 5));
-    }
+    // LeetCode Run Time 8ms
+    // O(n)
 
     public static int[] twoSum(int[] arr, int target)
     {
-        if(arr.length < 1)
+        if (arr == null || arr.length <= 1)
             return null;
 
         HashMap<Integer, Integer> solutions = new HashMap<Integer, Integer>(); // key is num,  val is index
