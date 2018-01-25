@@ -21,14 +21,13 @@ public class Problem013 {
 
         for(int i = 0; i < length; i++)
         {
-            String currentIndex = s.substring(i, i + 1);
-            String nextIndex = s.substring(i + 1, i + 2 );
+            int currentIndex = indexes.get(s.substring(i, i + 1));
+            int nextIndex = indexes.get(s.substring(i + 1, i + 2 ));
 
-            int temp = indexes.get(currentIndex);
-            if(temp > indexes.get(nextIndex))
-                sum -= vals[temp];
+            if(currentIndex > nextIndex)
+                sum -= vals[currentIndex];
             else
-                sum += vals[temp];
+                sum += vals[currentIndex];
         }
 
         sum += vals[indexes.get(s.substring(length))];
