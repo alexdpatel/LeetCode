@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class Problem001 {
-    // LeetCode Run Time 8ms
+    // LeetCode Run Time 7ms
     // O(n)
 
     public static int[] twoSum(int[] arr, int target)
